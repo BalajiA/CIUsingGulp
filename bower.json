@@ -1,0 +1,14 @@
+{
+  "name": "sfm",
+  "description": "application demo for sfm",
+  "main": "",
+  "authors": [
+    "BalajiA <balaji.ampolu@codeitinc.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies":{
+  	"ng-camera":"0.1.2"
+  }
+}

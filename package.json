@@ -1,0 +1,11 @@
+{
+  "name": "sfm",
+  "version": "1.0.0",
+  "description": "application demo for sfm",
+  "author": "",
+  "license": "ISC",
+  "devDependencies":{
+  	"gulp":"*",
+  	"gulp-webserver":"*"
+  }
+}

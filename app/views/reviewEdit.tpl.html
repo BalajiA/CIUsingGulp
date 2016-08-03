@@ -1,0 +1,38 @@
+<select ng-model="inspectionElement">
+	<option value="" selected="" disabled="">Selectone</option>
+	<option value="furness">Furness</option>
+	<option value="Smoke Detector">Smoke Detector</option>
+	<option value="Sprinkler_System">Sprinkler System</option>
+	<option value="Fire_Alarams">Fire Alarams</option>
+	<option value="Fire_Exit_System">Fire Exit System</option>
+</select>
+<br>
+
+<div ng-show="inspectionElement!=''">
+	Selected System:{{inspectionElement}}<br>
+	Number of Sprinklers
+	<input type="text" name="txt" class="form-control">
+	Inspected Sprinklers
+	<input type="text" name="txt" class="form-control">
+	<button class="btn btn-default" ng-click="AddSprinkler()">Add Sprinkler</button>
+</div>
+
+<form class="form" ng-show="addSplinker">
+	<div class="form-group">
+		<label for="">Working</label>
+		<input type="text" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="">Working</label>
+		<input type="text" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="">Working</label>
+		<input type="text" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="">Working</label>
+		<input type="text" class="form-control">
+	</div>
+</form>
+

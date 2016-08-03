@@ -1,0 +1,122 @@
+<html ng-app="sfm">
+  <head>
+    <!-- <meta charset="utf-8"> -->
+    <title>SFM</title>
+   <!--  <meta name="description" content="">
+    <meta name="viewport" content="width=device-width"> -->
+   <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/material/bootstrap-material-design.css">
+    <link type="text/css" rel="stylesheet" href="css/material/ripples.css"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700italic' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="libs/angular.js"></script>
+    <script type="text/javascript" src="libs/angular-resource.js"></script>
+    <script type="text/javascript" src="libs/angular-route.js"></script>
+    <script type="text/javascript" src="plugins/ui-bootstrap-tpls-1.3.3.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+   <script type="text/javascript" src="controllers/loginCtrl.js"></script>
+   <script type="text/javascript" src="controllers/dashboardCtrl.js"></script>
+   <script type="text/javascript" src="controllers/inspectionCtrl.js"></script>
+   <script type="text/javascript" src="controllers/reviewCtrl.js"></script>
+   <script type="text/javascript" src="plugins/webcam.js"></script>
+   <script type="text/javascript" src="plugins/ng-camera.js"></script>
+
+  </head>
+  <body>
+    <!-- <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <h1>
+              <a class="navbar-brand" href="#/">
+            <img src="images/logo.png" class="img" style="width: 50px;height:50px;"> SFM
+            </a>
+          </h1>
+            
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!-- <nav class="navbar navbar-default no-pad-left" role="">
+            <div class="navbar-header col-lg-3 col-md-3 col-sm-3 col-xs-12 no-pad-left no-pad-right">
+                <div class="col-sm-12 col-xs-9 no-pad-left">
+                    <h1 class="header_logo" tabindex="-1">
+                        <a href="#/" role="link">
+                            <img tabindex="-1" src="../images/logo.png" alt="FireInspection" class="img-responsive" style="height: 100px;">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-xs-3 hidden-lg hidden-md hidden-sm pull-right">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9">
+                <div class="row">
+                   
+                    <div id="navbar" class="navbar-collapse">
+                        <div class="row">
+                                <ul class="global-menu nav navbar-nav navbar-right clearfix ">
+                                <li class="quicksearch">
+                                    <a href="#/quicksearch">Link1</a>
+                                </li>
+
+                                <li class="login-menu">
+                                    <a href="#/login">Link2</a>
+                                </li>
+                                <li class="reg-menu register">
+                                    <a href="#/register">Link3</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav> -->
+    <div class="container">
+      <div ng-view="">
+        
+      </div>
+    </div>
+
+   <footer>
+    <!-- This is the page for rendering the main content as per region. -->
+    <div class="region region-footer">
+
+        <!-- Footer Starts -->
+        <!-- <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <a title="Back to top" class="backtop" ng-click="navToTop()" href="javascript:void(0)">Back to top</a>
+                   
+                </div>
+            </div>
+        </div> -->
+        <!-- Footer Ends -->
+    </div>
+</footer>
+
+
+</body>
+</html>

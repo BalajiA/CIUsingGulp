@@ -1,0 +1,66 @@
+
+
+
+<div id="page-wrap">
+
+<h1 align="center">Insecption Form</h1>
+
+<p></p>
+<div class="col-xs-12 col-md-12 inspection-search clearfix" align="center">
+   <div class = "input-group">
+     <input type="text" placeholder="Permit Number" class="form-control" value="12345"
+     ng-model="permitnumber">
+     <span class = "input-group-addon" class="btn" ng-click="searchAddress()">
+     	Search
+     </span>
+  </div>
+</div>
+
+<!-- <ng-camera
+            capture-message="Cheeeese!"
+            countdown="3"
+            output-height="160"
+            output-width="213"
+            viewer-height="320"
+            viewer-width="426"
+            image-format="jpeg"
+            jpeg-quality="100"
+            action-message="Take picture"
+            snapshot="picture"
+            flash-fallback-url="webcam.swf"
+            overlay-url="/overlay.png"
+            shutter-url="/shutter.mp3"
+            ></ng-camera> -->
+
+
+<div class="" ng-show="results!=''">
+<div class="form-group" ng-repeat="(key,value) in results">
+<label>{{key}}</label>
+     <input type="text" id="{{key}}" 
+    name="{{key}}"
+    class="form-control" 
+    ng-model="inspection.Address[key]" >
+   </div>
+<div class="Question">
+    <div ng-repeat="r in agreeOptions">
+       <label>
+           <input type="radio"  name="inspect" value="{{r.id}}" ng-model="inspection.readyforInspection" />{{r.displayname}}
+       </label> 
+    </div>
+</div>
+</div>
+
+<textarea id="reason" ng-show="inspection.readyforInspection=='no'">
+
+</textarea>
+
+<div ng-show="inspection.readyforInspection!=''">
+Please Click Next for further processing 
+<button type="button" 
+class="btn btn-default"
+ng-click="startInspection()">Next</button>
+</div>
+<br/>
+
+
+</div>
