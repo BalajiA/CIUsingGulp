@@ -42,10 +42,14 @@
     ng-model="inspection.Address[key]" >
    </div>
 <div class="Question">
-    <div ng-repeat="r in agreeOptions">
+    <div ng-repeat="r in agreeOptions" class="checkbox">
+
        <label>
-           <input type="radio"  name="inspect" value="{{r.id}}" ng-model="inspection.readyforInspection" />{{r.displayname}}
-       </label> 
+       <input type="radio"  name="inspect" 
+       value="{{r.id}}" 
+       ng-model="inspection.readyforInspection"
+       style="width: auto;float: left;" /> {{r.displayname}}
+       </label>
     </div>
 </div>
 </div>
