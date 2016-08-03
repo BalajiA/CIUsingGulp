@@ -1,3 +1,3 @@
 # CIUsingGulp
 
-A Prototype.
+A Prototype application.
